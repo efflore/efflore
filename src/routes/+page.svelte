@@ -1,7 +1,7 @@
 <script>
 	import Container from "$lib/components/Container.svelte";
 	import Section from "$lib/components/Section.svelte";
-
+    import Columns from "$lib/components/Columns.svelte";
 </script>
 
 <Section>
@@ -18,51 +18,23 @@
         <h2>Second Section</h2>
     </Container>
     <Container>
+        <Columns fractions={{xsmall: '1', medium: '1:1', large: '1:1:1'}}>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In reiciendis obcaecati tempore mollitia, iure praesentium voluptate? Veniam praesentium omnis maiores pariatur blanditiis corrupti eaque modi placeat odit, ex esse totam?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum natus deleniti nobis, enim similique numquam mollitia illo ad quis provident, pariatur fuga voluptatibus repellendus quod aspernatur quasi perferendis sunt nisi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sed aperiam cum rem esse voluptas eveniet consequatur alias hic facere fuga neque rerum pariatur autem, libero dolore velit dicta. Eius!</p>
+        </Columns>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores eius cumque alias delectus, commodi porro, reiciendis molestiae odio ipsum id ducimus voluptatibus! Vitae perspiciatis praesentium adipisci voluptate nulla provident itaque!</p>
     </Container>
 </Section>
 
-<style lang="scss">
+<style lang="scss" global>
     :root {
-        /* spacings */
-        --efflore-space-xsmall4: 0.25rem;
-        --efflore-space-xsmall5: 0.3125rem;
-        --efflore-space-xsmall6: 0.375rem;
-        --efflore-space-small4: 0.5rem;
-        --efflore-space-small5: 0.625rem;
-        --efflore-space-small6: 0.75rem;
-        --efflore-space-medium4: 1rem;
-        --efflore-space-medium5: 1.25rem;
-        --efflore-space-medium6: 1.5rem;
-        --efflore-space-large4: 2rem;
-        --efflore-space-large5: 2.5rem;
-        --efflore-space-large6: 3rem;
-        --efflore-space-xlarge4: 4rem;
-        --efflore-space-xlarge5: 5rem;
-        --efflore-space-xlarge6: 6rem;
-
-        /* fonts */
-        --efflore-font-size-small: 0.75rem;
-        --efflore-font-size-base: 1rem;
-        --efflore-font-size-large: 1.25rem;
-        --efflore-font-size-xlarge: 1.5rem;
-        --efflore-font-size-xxlarge: 2rem;
-        --efflore-font-size-xxxlarge: 2.5rem;
-        --efflore-line-height-heading: 1;
-        --efflore-line-height-narrow: 1.25;
-        --efflore-line-height-base: 1.5;
-        --efflore-line-height-wide: 2;
-
         /* sections */
-        --efflore-section-background-color: #ff0;
+        --efflore-section-background-color: #ffc;
         --efflore-section-text-color: #333;
-
-        /* coontainers */
-        --efflore-container-padding: var(--efflore-space-base);
-        --efflore-container-max-width: 65rem;
-
-        .efflore-section--green {
-            --efflore-section-background-color: #0f0;
-        }
     }
+
+    /* .efflore-section--green {
+        --efflore-section-background-color: #0f0;
+    } */
 </style>

@@ -17,23 +17,23 @@
         padding-top: var(--efflore-section-padding, var(--efflore-space-large4, 2rem));
         padding-bottom: var(--efflore-section-padding, var(--efflore-space-large4, 2rem));
 
+        * {
+            margin-top: 0;
+            margin-bottom: 1em;
+        }
+
+        *:first-child {
+            margin-top: 0;
+        }
+
+        *:last-child {
+            margin-bottom: 0;
+        }
+
         h1, h2, h3, h4, h5, h6 {
             margin-top: 1em;
             margin-bottom: max(0.5em, var(--efflore-space-medium4, 1rem));
             line-height: var(--efflore-line-height-heading, 1);
-
-            &:first-child {
-                margin-top: 0;
-            }
-        }
-
-        p, ul, dl, table, figure {
-            margin-top: 0;
-            margin-bottom: 1em;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
         }
 
         h1 {
